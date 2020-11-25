@@ -15,7 +15,11 @@ How to use Docker for development and for a simple way of distribution (borrowed
 - Dockerfile_ms2 (to be tested)
 
 `sudo docker build -f Dockerfile_fat -t fat ./app`
+
 `sudo docker run -p 5001:5000 fat`
+
 or
+
 `sudo docker build -f Dockerfile_multistage -t multistage ./app`
+
 `sudo docker run -p 5000:80 multistage`
