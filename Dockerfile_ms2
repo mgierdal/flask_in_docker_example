@@ -1,5 +1,8 @@
 # first stage
 FROM python:3.8 AS builder
+
+# below installs needed to compile some assets
+# perhaps only python-slim would require it
 #RUN apt-get update
 #RUN apt-get install -y --no-install-recommends build-essential gcc
 
